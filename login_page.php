@@ -27,7 +27,7 @@ if( isset($_SESSION["from"]))
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
  <style type="text/css">
  body {
-	background-color: #3F9;
+	background-color: #fff;
 }
  body,td,th {
 	color: #399;

@@ -1,6 +1,6 @@
 <style type="text/css">
 body {
-	background-color: #3F9;
+	background-color: #fff;
 }
 body,td,th {
 	color: #399;
