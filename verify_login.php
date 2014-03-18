@@ -3,7 +3,8 @@
 		
 if( !isset( $_POST['username']) || !isset( $_POST['password']))	//if this page is not requested from login page
 {
-	header("location:login_page.php");
+//	header("location:login_page.php");
+	header("location:index.php");
 	exit();
 }
 
@@ -48,7 +49,8 @@ else {
 	//echo "Wrong Username or Password";
 
 	$_SESSION["wrong_UP"] = "error";
-	header("location:login_page.php");
+//	header("location:login_page.php");
+	header("location:index.php");
 	exit();
 }
 

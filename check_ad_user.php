@@ -15,7 +15,8 @@ if(strcmp($_SESSION["valid"],"true") == 0)
 }
 else
 {		
-	header("location:login_page.php");
+//	header("location:login_page.php");
+	header("location:index.php");
 	exit();
 }
 
@@ -35,7 +36,8 @@ if( isset($_SESSION["myusername"]) && isset($_SESSION["mypassword"]) )
 }
 else
 {		
-	header("location:login_page.php");
+//	header("location:login_page.php");
+	header("location:index.php");
 	exit();
 }
 */

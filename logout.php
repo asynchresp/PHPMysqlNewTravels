@@ -13,6 +13,7 @@ if( !isset($_SESSION["from"]) || strcmp( $_SESSION["from"], "admin.php" ) != 0 &
 */
 //it comes from any where...
 $_SESSION["from"] = "logout.php";
-header("location:login_page.php");
+//header("location:login_page.php");
+	header("location:index.php");
 exit();
 ?>
