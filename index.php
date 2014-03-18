@@ -8,20 +8,16 @@
 
 <body>
 <div id="layout">
-	<div id="header">
-    	<h1 style="text-align:center;">New Travels Pvt. Ltd. </h1>
+    <div id="header">
+      <h1 style="text-align:center;">New Travels Pvt. Ltd. </h1>
     </div>
-    
     <div id="contents">
-        <div id="menu">
-        	
-         </div>
+        <div id="menu"> </div>
         <div id="container">
-        	<?php include("login_page.php"); ?>            
+        <?php include("login_page.php"); ?>
         </div>
     </div>
     <div id="footer">Copyrights &copy; 2014 New Travels Pvt. Ltd. All rights reserved.</div>
 </div>
-
 </body>
 </html>
