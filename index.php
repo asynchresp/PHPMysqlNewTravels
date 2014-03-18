@@ -14,7 +14,7 @@
     
     <div id="contents">
         <div id="menu">
-        	<?php include("admin_menu.php"); ?>
+        	
          </div>
         <div id="container">
         	<?php include("login_page.php"); ?>            

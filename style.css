@@ -7,19 +7,21 @@
 	margin:0 auto;
 	//background-color:#999;
 	border:solid;
+	border-width:1px;
 }
+
 
 #header{
 	width:inherit;
 	height:150px;
 	//background-color:lightblue;
 	border:solid;
+	border-width:1px;
 }
 
 #contents{
 	//background-color:lightgreen;
-	width:inherit;
-	
+	width:inherit;	
 	border:solid;
 }
 
@@ -29,7 +31,8 @@
 	width:20%;
 	float:left;
 	height:inherit;
-	border:solid;	
+	border:solid;
+	border-width:1px;	
 }
 
 #container{
@@ -39,6 +42,7 @@
 	height:inherit;
 	//float:left;
 	border:solid;
+	border-width:1px;
 }
 
 #footer{
@@ -48,6 +52,7 @@
 	//margin:0 auto;
 	text-align:center;
 	//background-color:lightblue;
+	border-width:1px;
 	
 }
 
