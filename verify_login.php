@@ -8,7 +8,7 @@ if( !isset( $_POST['username']) || !isset( $_POST['password']))	//if this page i
 }
 
 $host="localhost"; // Host name 
-$username="root"; // Mysql username a
+$username="root"; // Mysql username 
 $password=""; // Mysql password 
 $db_name="mydb"; // Database name 
 $tbl_name="member"; // Table name 

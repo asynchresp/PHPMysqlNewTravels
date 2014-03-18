@@ -26,7 +26,9 @@ if( isset($_SESSION["from"]))
 <title>Login</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
  <style type="text/css">
- 
+ body {
+	background-color: #3F9;
+}
  body,td,th {
 	color: #399;
 }
@@ -34,7 +36,7 @@ if( isset($_SESSION["from"]))
 </head>
 <body>
 
-	<form name="login_form" method="post" action="<?php echo htmlspecialchars("verify_login.php");?>">
+	<form name="login_form" method="post" action="verify_login.php">
 	
 <br/><br/><br/><br/>
 	  <table width="387" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#a0a0a0">
