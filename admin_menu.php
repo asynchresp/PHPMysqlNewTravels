@@ -5,13 +5,14 @@
 <title>admin_menu</title>
 
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="menu">
-<ul id="MenuBar1" class="MenuBarHorizontal">
-  <li><a class="MenuBarItemSubmenu" href="#">Masters</a>
+  <ul id="MenuBar2" class="MenuBarVertical">
+     <li><a class="MenuBarItemSubmenu" href="#">Masters</a>
     <ul>
       <li><a href="#">Sectors</a></li>
       <li><a href="#">Airlines</a></li>
@@ -39,12 +40,11 @@
       <li><a href="#">Account Wise</a></li>
     </ul>
   </li>
-</ul>
-
- 
+  </ul>
 </div>
 <script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar_admin", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 </script>
 </body>
 
