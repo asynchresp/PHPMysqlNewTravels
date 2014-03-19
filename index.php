@@ -13,11 +13,11 @@
     </div>
     
     <div id="contents">
-        <div id="menu">
+        <div id="menu" >
         	<?php include("admin_menu.php"); ?>
          </div>
-        <div id="container">
-        	<?php include("login_page.php"); ?>            
+        <div id="container" >
+           	<?php include("login_page.php"); ?>             
         </div>
     </div>
     <div id="footer">Copyrights &copy; 2014 New Travels Pvt. Ltd. All rights reserved.</div>
