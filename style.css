@@ -7,6 +7,7 @@
 	margin:0 auto;
 	//background-color:#999;
 	border:solid;
+	border-width:1px;
 }
 
 #header{
@@ -14,40 +15,57 @@
 	height:150px;
 	//background-color:lightblue;
 	border:solid;
+	border-width:1px;
+	margin:0;
+	padding:0;
 }
 
 #contents{
+	overflow:auto;
+	height:100%;
 	//background-color:lightgreen;
-	width:inherit;
-	
+	width:inherit;	
 	border:solid;
+	border-width:1px;	
+	position:relative;	
 }
 
 #menu{
-	//background-color:lightblue;
+	background-color:lightblue;
 	display:block;
 	width:20%;
 	float:left;
-	height:inherit;
-	border:solid;	
+	height:100%;
+	border:solid;
+	border-width:1px;
+	position:relative;
+	height:inherit;	
 }
 
 #container{
-	//background-color:yellow;
+	background-color:yellow;
 	display:inline;
 	width:80%;
-	height:inherit;
-	//float:left;
+	height:100%;
+	float:none;
 	border:solid;
+	border-width:1px;
+	position:relative;
+	height:inherit;	
 }
 
 #footer{
 	border:solid;
 	width:900px;
 	display:block;
-	//margin:0 auto;
+	float:none;
+	margin:0 auto;
 	text-align:center;
+	height:10%;
 	//background-color:lightblue;
+	border-width:1px;
+	position:relative;
+	bottom:0px;
 	
 }
 
