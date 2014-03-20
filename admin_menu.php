@@ -14,30 +14,30 @@
   <ul id="MenuBar2" class="MenuBarVertical">
      <li><a class="MenuBarItemSubmenu" href="#">Masters</a>
     <ul>
-      <li><a href="#">Sectors</a></li>
-      <li><a href="#">Airlines</a></li>
-      <li><a href="#">Accounts</a></li>
-      <li><a href="#">Customers</a></li>
-      <li><a href="#">Country</a></li>
-      <li><a href="#">Company Setup</a></li>
+      <li><?php echo "<a href='sectors.php'>Sectors</a>" ?> </li>
+      <li><?php echo "<a href='airlines.php'>Airlines</a>" ?> </li>
+      <li><?php echo "<a href='accounts.php'>Accounts</a>" ?> </li>
+      <li><?php echo "<a href='customers.php'>Customers</a>" ?> </li>
+      <li><?php echo "<a href='country.php'>Country</a>" ?> </li>
+      <li><?php echo "<a href='company_setup.php'>Company Setup</a>" ?> </li>
     </ul>
   </li>
   <li><a href="#" title="Ticket Sales" class="MenuBarItemSubmenu">Transactions</a>
     <ul>
-      <li><a href="#">Ticket Sales</a></li>
-      <li><a href="#">Payment Entry</a></li>
-      <li><a href="#">Refund of Ticket</a></li>
-      <li><a href="#">Reissue of Ticket</a></li>
-      <li><a href="#">Journal Entry</a></li>
-      <li><a href="#">Quotation</a></li>
-      <li><a href="#">Excahnge Offer</a></li>
+     <li><?php echo "<a href='ticket_sales.php'>Ticket Sales</a>" ?> </li>
+      <li><?php echo "<a href='payment_entry.php'>Payment Entry </a>" ?></li>
+      <li><?php echo "<a href='ticket_refund.php'>Refund of Ticket</a>" ?> </li>
+      <li><?php echo "<a href='ticket_reissue.php'>Reissue of Ticket</a>" ?> </li>
+      <li><?php echo "<a href='journal_entry.php'>Journal Entry</a>" ?> </li>
+      <li><?php echo "<a href='quotation.php'>Quotation</a>" ?> </li>
+      <li><?php echo "<a href='exchange_offer.php'>Excahnge Offer</a>" ?> </li> 
     </ul>
   </li>
   <li><a class="MenuBarItemSubmenu" href="#">Reports</a>
     <ul>
-      <li><a href="#">Ticket Sales</a>      </li>
-      <li><a href="#">Cash/Bank Balance</a></li>
-      <li><a href="#">Account Wise</a></li>
+      <li><?php echo "<a href='ticket_sales_admin.php'>Ticket Sales</a>    " ?>  </li>
+      <li><?php echo "<a href='cash_bank_balance.php'>Cash/Bank Balance</a>" ?></li>
+      <li><?php echo "<a href='account_wise.php'>Account Wise</a>" ?></li>
     </ul>
   </li>
   </ul>

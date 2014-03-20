@@ -26,6 +26,7 @@
 	height:100%;
 	//background-color:lightgreen;
 	width:inherit;	
+	min-height:520px;
 	border:solid;
 	border-width:1px;	
 	position:relative;	
