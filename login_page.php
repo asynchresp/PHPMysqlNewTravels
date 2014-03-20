@@ -1,6 +1,8 @@
 <?php
-session_start();
+//session_start();
 
+//NO NEED TO CHECK BELOW CODE HERE>>>>IT WILL BE DONE IN INDEX.PHP
+/*
 if( isset($_SESSION["from"]))
 {
 	if( strcmp($_SESSION["from"], "logout.php") == 0 ) //if it is from logout.php
@@ -14,12 +16,12 @@ if( isset($_SESSION["from"]))
 	else if(strcmp($_SESSION["from"], "user.php") == 0  || strcmp($_SESSION["from"], "admin.php") == 0 ) 
 	{
 		//echo "from ".$_SESSION["from"];
-		header("location:".$_SESSION['from']);
+		header("location:".$_SESSION["from"]);
 //		exit();
 	}
 	
 }
-
+*/
 ?>
 <html>
 <head>
@@ -29,8 +31,8 @@ if( isset($_SESSION["from"]))
  body {
 	background-color: #fff;
 }
- body,td,th {
-	color: #399;
+ body,td,th,a {
+	color: #36C;
 }
  </style>
 </head>
@@ -43,33 +45,38 @@ if( isset($_SESSION["from"]))
 		<tr>
 			<td colspan="3" bgcolor="#33CC66"><strong>Login </strong></td>
 		</tr>
+        
 		<tr style="color:blue;">
 			<td width="118" align="right" bgcolor="#33CC66"> Username</td>
-		  <td width="6" bgcolor="#33CC66">:</td>
+	      <td width="6" bgcolor="#33CC66">:</td>
 			<td width="247" align="center" bgcolor="#33CC66"><input name="username" type="text" id="username"></td>
 		</tr>
-		<tr style="color:blue;">
+		
+        <tr style="color:blue;">
 			<td align="right" bgcolor="#33CC66">Password</td>
-		  <td bgcolor="#33CC66">:</td>
+	      <td bgcolor="#33CC66">:</td>
 			<td align="center" bgcolor="#33CC66"><input name="password" type="password" id="password"></td>
 		</tr>
-		<tr style="color:blue;">
+		
+        <tr style="color:blue;">
 			<td bgcolor="#33CC66">&nbsp;</td>
 			<td bgcolor="#33CC66">&nbsp;</td>
-			<td align="center" bgcolor="#33CC66"><input type="submit" name="Submit" value="Login"></td>
+			<td align="center" bgcolor="#33CC66"><input type="submit" name="Submit" value="Login"> <a href="signup_page.php">New User?</a> </td>
 		</tr>
-		</table>
+		
+      </table>
         <?php
 
-if( isset($_SESSION["wrong_UP"]) && strcmp($_SESSION["wrong_UP"],"error") == 0 )
-{
-	echo  "<center><p style='margin-top:10px;position:relative;color:red;'>Incorrect username or password.</p></center>";
-	//for checking again later
-	unset($_SESSION["wrong_UP"]);
+			if( isset($_SESSION["wrong_UP"]) && strcmp($_SESSION["wrong_UP"],"error") == 0 )
+			{
+				echo  "<center><p style='margin-top:10px;position:relative;color:red;'>Incorrect username or password.</p></center>";
+				//for checking again later
+				unset($_SESSION["wrong_UP"]);
 	
-}
-?>
-	</form>
+			}
+		?>
+        
+</form>
 
 
 </body>
