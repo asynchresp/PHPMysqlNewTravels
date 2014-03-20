@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-	
 ?>
 
 <html>
@@ -16,6 +14,10 @@ body,td,th {
 </head>
 
 <body style="color: #399;">
+<div id="layout">
+<?php include("header.php"); ?>
+<br/>
+<div id=contents">
 <form name="sign_up"method="post" action="create_user.php" >
 	<table width="350" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#33CC66">
 <!-- ------------------------------------------------------------------------->        
@@ -94,6 +96,9 @@ if( isset($_SESSION["error_in_signup"]) )
 <!-- ------------------------------------------------------------------------->                    
 	</table>
 </form>
+</div>
+<?php include("footer.php"); ?>
+</div>
 
 
 </body>

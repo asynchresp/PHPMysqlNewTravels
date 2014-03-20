@@ -31,9 +31,7 @@ if( isset($_SESSION["from"]))
 
 <body>
 <div id="layout">
-    <div id="header">
-      <h1 style="text-align:center;">New Travels Pvt. Ltd. </h1>
-    </div>
+    <?php include("header.php"); ?>
     <div id="contents">
 
        <!-- <div id="menu" >
@@ -50,13 +48,9 @@ if( isset($_SESSION["from"]))
             	include("login_page.php");
 			?>             
 
-        <div id="menu"> </div>
-        <div id="container">
-        <?php include("login_page.php"); ?>
-
-        </div>
+       </div>
     </div>
-    <div id="footer">Copyrights &copy; 2014 New Travels Pvt. Ltd. All rights reserved.</div>
+	<?php include("footer.php"); ?>
 </div>
 </body>
 </html>

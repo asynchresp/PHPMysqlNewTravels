@@ -11,7 +11,8 @@
 }
 
 #header{
-	width:inherit;
+	margin:0 auto;
+	width:900px;
 	height:150px;
 	//background-color:lightblue;
 	border:solid;
@@ -31,7 +32,7 @@
 }
 
 #menu{
-	background-color:lightblue;
+	//background-color:lightblue;
 	display:block;
 	width:20%;
 	float:left;
@@ -61,7 +62,7 @@
 	float:none;
 	margin:0 auto;
 	text-align:center;
-	height:10%;
+	height:20px;
 	//background-color:lightblue;
 	border-width:1px;
 	position:relative;
