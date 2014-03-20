@@ -36,9 +36,8 @@ if( isset($_SESSION["from"]))
     </div>
     <div id="contents">
 
-        <div id="menu" >
-        	<?php include("admin_menu.php"); ?>
-         </div>
+       <!-- <div id="menu" >
+        </div>-->
         <div id="container" >
            	<?php
 				if( isset($_SESSION["success_in_signup"]) )//if it has been set, i.e this page is loaded from signup_page.php
@@ -50,6 +49,11 @@ if( isset($_SESSION["from"]))
 				}
             	include("login_page.php");
 			?>             
+
+        <div id="menu"> </div>
+        <div id="container">
+        <?php include("login_page.php"); ?>
+
         </div>
     </div>
     <div id="footer">Copyrights &copy; 2014 New Travels Pvt. Ltd. All rights reserved.</div>
