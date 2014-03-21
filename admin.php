@@ -26,9 +26,17 @@ else if( strcmp( $_SESSION["from"], "check_ad_user.php" ) != 0 && strcmp( $_SESS
 }
 $_SESSION["from"] = "admin.php";
 
-// admin menus
-echo "Welcome admin:<br/>";
-echo "<ul><li><a href='index.php'>Admin menu1</a> </li><li><a href='index.php'>Admin menu2</a> </li><li><a href='index.php'>Admin menu3</a> </li></ul>";
-
-echo  "<a href='logout.php'>Logout</a>";
 ?>
+<div id="layout">
+	<?php include("header.php"); ?>
+    
+    <div id="contents">
+    	<div id="menu">
+        	<?php include("admin_menu.php"); ?>
+        </div>
+        <div id="container">
+        	<?php echo  "<a href='logout.php'>Logout</a>"; ?>
+        </div>
+     </div>
+     <?php include("footer.php"); ?>
+</div> 	

@@ -8,7 +8,7 @@
 
 <body>
 <div id="header">
-      <h1 style="text-align:center;">New Travels Pvt. Ltd. </h1>
+      <h1 style="text-align:center;">Royal Travel and Tours, Seeb</h1>
     </div>
 </body>
 </html>

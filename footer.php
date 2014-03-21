@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div id="footer">Copyrights &copy; 2014 New Travels Pvt. Ltd. All rights reserved.</div>
+    <div id="footer">Copyrights &copy; 2014 Royal Travel & Tours, Seeb. All rights reserved. Developed by <?php echo"<a href='www.apsyssolutions.com'>Apsys Solutions</a>" ?></div>
 
 </body>
 </html>
