@@ -11,7 +11,6 @@ session_start();
 
 echo "<head> <title> Welcome Admin </title> </head>";
 
-/*
 if( !isset($_SESSION["from"] ))
 {
 //	header("location:login_page.php");
@@ -24,7 +23,7 @@ else if( strcmp( $_SESSION["from"], "check_ad_user.php" ) != 0 && strcmp( $_SESS
 //	header("location:login_page.php");
 	header("location:index.php");
 	exit();
-}*/
+}
 $_SESSION["from"] = "admin.php";
 
 // admin menus
