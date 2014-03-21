@@ -4,15 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>admin_menu</title>
 
-<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
-<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
-<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-<div id="menu">
-  <ul id="MenuBar2" class="MenuBarVertical">
-     <li><a class="MenuBarItemSubmenu" href="#">Masters</a>
+<div id="menu-bar">
+  <ul>
+     <li class="has-sub"><a href="#">Masters</a>
     <ul>
       <li><a href="#">Sectors</a></li>
       <li><a href="#">Airlines</a></li>
@@ -22,7 +20,7 @@
       <li><a href="#">Company Setup</a></li>
     </ul>
   </li>
-  <li><a href="#" title="Ticket Sales" class="MenuBarItemSubmenu">Transactions</a>
+  <li class="has-sub"><a href="#" title="Ticket Sales" >Transactions</a>
     <ul>
       <li><a href="#">Ticket Sales</a></li>
       <li><a href="#">Payment Entry</a></li>
@@ -33,7 +31,7 @@
       <li><a href="#">Excahnge Offer</a></li>
     </ul>
   </li>
-  <li><a class="MenuBarItemSubmenu" href="#">Reports</a>
+  <li class="has-sub"><a href="#">Reports</a>
     <ul>
       <li><a href="#">Ticket Sales</a>      </li>
       <li><a href="#">Cash/Bank Balance</a></li>
@@ -42,10 +40,6 @@
   </li>
   </ul>
 </div>
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar_admin", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
 </body>
 
 </html>

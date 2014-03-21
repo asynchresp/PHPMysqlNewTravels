@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
-<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-<ul id="MenuBar1" class="MenuBarVertical">
+<div id="menu-bar">
+<ul>
       <li><?php echo "<a href='ticket_sales.php'>Ticket Sales</a>" ?> </li>
       <li><?php echo "<a href='payment_entry.php'>Payment Entry </a>" ?></li>
       <li><?php echo "<a href='ticket_refund.php'>Refund of Ticket</a>" ?> </li>
@@ -17,8 +17,6 @@
       <li><?php echo "<a href='quotation.php'>Quotation</a>" ?> </li>
       <li><?php echo "<a href='exchange_offer.php'>Excahnge Offer</a>" ?> </li> 
 </ul>
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
+</div>
 </body>
 </html>
