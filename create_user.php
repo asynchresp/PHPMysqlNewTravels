@@ -65,11 +65,13 @@ else
 {
 	//else store any one as the password
 	$password = $password_1;
+	//TODO :- Encrypt the password and store into database
+	$key = "KeyValue";
+	$password = mcrypt_ecb(MCRYPT_DES, $key, $password, MCRYPT_ENCRYPT);
 	
 	//username is same as email id
 	$username = $email;
-	//create the username
-	//$username = substr($email, 0, strpos($email, "@") );
+	
 }
 
 $sql="INSERT INTO $tbl_name(full_name,birth_date,email,username,password) VALUES('$full_name','$birth_date','$email','$username','$password')";
