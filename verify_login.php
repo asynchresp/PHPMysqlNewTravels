@@ -27,6 +27,11 @@ $myusername = stripslashes($myusername);
 $mypassword = stripslashes($mypassword);
 $myusername = mysql_real_escape_string($myusername);
 $mypassword = mysql_real_escape_string($mypassword);
+
+//TODO :- Decrypt the password and compare in the database
+$key = "KeyValue";
+$mypassword = mcrypt_ecb(MCRYPT_DES, $key, $mypassword, MCRYPT_ENCRYPT);
+
 $sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
 $result=mysql_query($sql);
 
