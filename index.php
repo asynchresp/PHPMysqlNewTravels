@@ -1,3 +1,26 @@
+<?php
+session_start();
+
+if( isset($_SESSION["from"]))
+{
+	if( strcmp($_SESSION["from"], "logout.php") == 0 ) //if it is from logout.php
+	{
+	session_destroy();
+	$_SESSION = array();
+	unset($_SESSION["from"]);
+
+	}
+	//if it is from user or admin
+	else if(strcmp($_SESSION["from"], "user.php") == 0  || strcmp($_SESSION["from"], "admin.php") == 0 ) 
+	{
+		//echo "from ".$_SESSION["from"];
+		header("location:".$_SESSION["from"]);
+		exit();
+	}
+	
+}
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,24 +31,26 @@
 
 <body>
 <div id="layout">
-    <div id="header">
-      <h1 style="text-align:center;">New Travels Pvt. Ltd. </h1>
-    </div>
+    <?php include("header.php"); ?>
     <div id="contents">
-<<<<<<< HEAD
-        <div id="menu" >
-        	<?php include("admin_menu.php"); ?>
-         </div>
+
+       <!-- <div id="menu" >
+        </div>-->
         <div id="container" >
-           	<?php include("login_page.php"); ?>             
-=======
-        <div id="menu"> </div>
-        <div id="container">
-        <?php include("login_page.php"); ?>
->>>>>>> 3b761ef53d6b2fc1163710fc4f87225924e4ac86
-        </div>
+           	<?php
+				if( isset($_SESSION["success_in_signup"]) )//if it has been set, i.e this page is loaded from signup_page.php
+				{
+					echo "<center><label>$_SESSION[success_in_signup]</label></center>";
+				
+					//for checking again later
+					unset($_SESSION["success_in_signup"]);
+				}
+            	include("login_page.php");
+			?>             
+
+       </div>
     </div>
-    <div id="footer">Copyrights &copy; 2014 New Travels Pvt. Ltd. All rights reserved.</div>
+	<?php include("footer.php"); ?>
 </div>
 </body>
 </html>
