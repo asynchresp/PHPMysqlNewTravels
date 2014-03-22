@@ -1,4 +1,3 @@
-
 <style type="text/css">
 body {
 	background-color: #fff;
@@ -28,11 +27,18 @@ if( !isset($_SESSION["from"] ))
 }
 
 $_SESSION["from"] = "user.php";
-
-
-// user menus
-echo "Welcome user:<br/>";
-echo "<ul><li><a href='index.php'>User menu1</a> </li><li><a href='index.php'>User menu2</a> </li><li><a href='index.php'>User menu3</a> </li></ul>";	
-
-echo  "<a href='logout.php'>Logout</a>";
 ?>
+
+<div id="layout">
+<?php include("header.php"); ?>
+<div id="contents">
+	<div id="menu">
+    	<?php include("user_menu.php"); ?>
+    </div>
+    <div id="container">
+		<?php echo  "<a href='logout.php'>Logout</a>"; ?>
+	</div>
+    </div>
+    
+    <?php include("footer.php"); ?>
+</div>
