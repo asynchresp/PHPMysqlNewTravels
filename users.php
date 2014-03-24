@@ -4,7 +4,13 @@
     	<title>User</title>
 	</head>
 	<body> 
-    <center>
+  <div id="layout">
+<?php include("header.php"); ?>
+<div id="contents">
+<div id="menu">
+<?php include("admin_menu.php"); ?>
+</div>
+ <div id="container">
 	    <div >
         <form name="users" action="users.php" method="post">
        	  <table border="0" align="center">
@@ -34,6 +40,10 @@
         </form>
 	    </div>
         
-    </center>
+    </div>
+
+</div>
+<?php include("footer.php"); ?>
+
 	</body>
 </html>

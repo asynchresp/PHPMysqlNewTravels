@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-	
 ?>
 
 <html>
@@ -14,7 +12,7 @@ session_start();
 	<script src="jquery-1.6.2.min.js"></script>
 	<script src="jquery-ui-1.8.15.custom.min.js"></script>
 	<link rel="stylesheet" href="jqueryCalendar.css">
-    <!--<link rel="stylesheet" href="style.css" />-->
+    <link rel="stylesheet" href="style.css" />
 	<script>
     	jQuery( function(){ jQuery( "#birth_date" ).datepicker(); } );
 	</script>
@@ -22,7 +20,7 @@ session_start();
 
 <style type="text/css">
 body,td,th {
-	color: #36C;
+	color: #fff;
 }
 </style>
 </head>
@@ -32,8 +30,11 @@ body,td,th {
 <div id="layout">
 <?php include("header.php"); ?>
 
+<div id="container">
+<br/><br/><br/><br/>
+
 <form name="sign_up"method="post" action="create_user.php" >
-	<table width="350" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#33CC66">
+	<table width="350" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#666666" style="border-radius:10px;box-shadow:10px 10px 5px #999">
 <!-- ------------------------------------------------------------------------->        
 		<tr height="50px">
     		<td align="left">
@@ -122,7 +123,7 @@ if( isset($_SESSION["error_in_signup"]) )
 </form>
 
 </body>
-
+</div>
 <?php include("footer.php"); ?>
 </div>
 </body>
