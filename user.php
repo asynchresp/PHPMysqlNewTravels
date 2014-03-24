@@ -31,14 +31,14 @@ $_SESSION["from"] = "user.php";
 
 <div id="layout">
 <?php include("header.php"); ?>
-<div id="contents">
+
 	<div id="menu">
     	<?php include("user_menu.php"); ?>
     </div>
     <div id="container">
 		<?php echo  "<a href='logout.php'>Logout</a>"; ?>
 	</div>
-    </div>
+   
     
     <?php include("footer.php"); ?>
 </div>

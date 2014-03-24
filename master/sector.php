@@ -1,10 +1,15 @@
 <!DOCTYPE HTML> 
 <html>
-	<head>
+<head>
     	<title>Sector</title>
-	</head>
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
 	<body>
-    <center>
+    <div id="layout">
+    <?php include("../header.php"); ?>
+    <?php include("../admin_menu.php"); ?>
+    	
+    <div id="contents">    
 	    <div >
         <form name="sector" action="sector.php" method="post">
        	  <table border="0" align="center">
@@ -21,12 +26,12 @@
                     <td><label>Sec5</label></td>
                 </tr>
                 <tr >
-                	<td><input type="text" name="code" /></td>
-	          	    <td><input type="text" name="sec1" /></td>
-                    <td><input type="text" name="sec2" /></td>
-                    <td><input type="text" name="sec3" /></td>
-                    <td><input type="text" name="sec4" /></td>
-                    <td><input type="text" name="sec5" /></td>            
+                	<td><input type="text" name="code" size="15" /></td>
+	          	    <td><input type="text" name="sec1" size="15" /></td>
+                    <td><input type="text" name="sec2" size="15" /></td>
+                    <td><input type="text" name="sec3" size="15" /></td>
+                    <td><input type="text" name="sec4" size="15" /></td>
+                    <td><input type="text" name="sec5" size="15" /></td>            
 	            </tr>
             
           </table>
@@ -41,6 +46,9 @@
         </form>
 	    </div>
         
-    </center>
+    </div>
+    <?php include("../footer.php"); ?>
+    
+    </div>
 	</body>
 </html>

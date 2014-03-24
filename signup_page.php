@@ -14,7 +14,7 @@ session_start();
 	<script src="jquery-1.6.2.min.js"></script>
 	<script src="jquery-ui-1.8.15.custom.min.js"></script>
 	<link rel="stylesheet" href="jqueryCalendar.css">
-    <link rel="stylesheet" href="style.css" />
+    <!--<link rel="stylesheet" href="style.css" />-->
 	<script>
     	jQuery( function(){ jQuery( "#birth_date" ).datepicker(); } );
 	</script>

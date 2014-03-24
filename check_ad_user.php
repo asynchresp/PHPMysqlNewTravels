@@ -5,7 +5,7 @@ if(strcmp($_SESSION["valid"],"true") == 0)
 {
 	$_SESSION["from"] = "check_ad_user.php";
 	
-	if( strcmp($_SESSION["myusername"] , "admin")  == 0)
+	if( strcmp($_SESSION["myusername"] , "admin@gmail.com")  == 0)
 		header("location:admin.php");
 	else
 		header("location:user.php");
@@ -25,7 +25,7 @@ else
 /*
 if( isset($_SESSION["myusername"]) && isset($_SESSION["mypassword"]) )
 {
-	if( strcmp($_SESSION["myusername"] , "admin")  == 0)
+	if( strcmp($_SESSION["myusername"] , "admin@gmail.com")  == 0)
 		header("location:admin.php");
 	else
 		header("location:user.php");

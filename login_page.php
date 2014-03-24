@@ -30,8 +30,9 @@ if( isset($_SESSION["from"]))
 
 <style type="text/css">
 body,td,th,a {
-	color: #36C;
+	color:#FFF;
 }
+
 </style>
 
 </head>
@@ -40,7 +41,7 @@ body,td,th,a {
 	<form name="login_form" method="post" action="verify_login.php">
 	
 <br/><br/><br/><br/>
-	  <table width="387" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#33CC66">
+	  <table width="387" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#666666" style="border-radius:10px;box-shadow:10px 10px 5px #999">
 		<tr>
 			<td colspan="3" ><strong>Login </strong></td>
 		</tr>

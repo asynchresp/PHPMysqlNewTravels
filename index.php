@@ -32,10 +32,7 @@ if( isset($_SESSION["from"]))
 <body>
 <div id="layout">
     <?php include("header.php"); ?>
-    <div id="contents">
-
-       <!-- <div id="menu" >
-        </div>-->
+    
         <div id="container" >
            	<?php
 				if( isset($_SESSION["success_in_signup"]) )//if it has been set, i.e this page is loaded from signup_page.php
@@ -48,7 +45,7 @@ if( isset($_SESSION["from"]))
             	include("login_page.php");
 			?>             
 
-       </div>
+      
     </div>
 	<?php include("footer.php"); ?>
 </div>

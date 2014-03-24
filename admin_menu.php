@@ -12,12 +12,13 @@
   <ul>
      <li class="has-sub"><a href="#">Masters</a>
     <ul>
-      <li><a href="#">Sectors</a></li>
-      <li><a href="#">Airlines</a></li>
-      <li><a href="#">Accounts</a></li>
-      <li><a href="#">Customers</a></li>
-      <li><a href="#">Country</a></li>
-      <li><a href="#">Company Setup</a></li>
+      <li><a href="master/sector.php">Sectors</a></li>
+      <li><a href="master/airlines.php">Airlines</a></li>
+      <li><a href="master/accounts.php">Accounts</a></li>
+      <li><a href="master/users.php">Users</a></li>
+      <li><a href="master/customers.php">Customers</a></li>
+      <li><a href="master/country.php">Country</a></li>
+      <li><a href="master/company_setup.php">Company Setup</a></li>
     </ul>
   </li>
   <li class="has-sub"><a href="#" title="Ticket Sales" >Transactions</a>
@@ -29,6 +30,7 @@
       <li><a href="#">Journal Entry</a></li>
       <li><a href="#">Quotation</a></li>
       <li><a href="#">Excahnge Offer</a></li>
+      
     </ul>
   </li>
   <li class="has-sub"><a href="#">Reports</a>
@@ -38,7 +40,10 @@
       <li><a href="#">Account Wise</a></li>
     </ul>
   </li>
+  
   </ul>
+  <div style="margin-left:800px;color:white;margin-top:10px;"><a href="logout.php" style="color:#ffffff;text-decoration:none;">
+  	<?php print(mktimeLogout</a></div>
 </div>
 </body>
 
