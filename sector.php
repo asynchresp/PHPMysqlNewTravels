@@ -22,7 +22,6 @@ if( isset( $_POST['submit']) )
 	$sec3 = $_POST['sec3'];
 	$sec4 = $_POST['sec4'];
 	$sec5 = $_POST['sec5'];
-	echo $code.$sec1.$sec2.$sec3.$sec4.$sec5;
 	
 	//working here
 	$sql="INSERT INTO $tbl_name(code,sec1,sec2,sec3,sec4,sec5) VALUES ('$code','$sec1','$sec2','$sec3','$sec4','$sec5')";
@@ -31,7 +30,8 @@ if( isset( $_POST['submit']) )
 	//if the result is null, then there has been an error in insertion
 	if( !$result )
 	{
-		echo "Error in insertion to sector table.";
+		//echo "Error in insertion to sector table.";
+		$_SESSION["db_error"] = "1";
 	}
 }
 else if( isset( $_POST['display']) )
@@ -80,6 +80,13 @@ else if( isset( $_POST['display']) )
           <td><input type="text" name="sec5" size="15" /></td>
         </tr>
       </table>
+      <?php
+	  if( isset($_SESSION["db_error"]) )
+	  {
+		  echo "<p style='margin-top:10px;position:relative;color:red;'>Error in inserting the value.</p>";
+		  unset($_SESSION["db_error"]);
+	  }
+	  ?>
     </form>
   
   
