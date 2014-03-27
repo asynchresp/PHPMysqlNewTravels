@@ -35,6 +35,7 @@ if( isset($_SESSION["from"]))
     
         <div id="container" >
            	<?php
+			/*Below code is implemented in login_page.php itself.
 				if( isset($_SESSION["success_in_signup"]) )//if it has been set, i.e this page is loaded from signup_page.php
 				{
 					echo "<center><label>$_SESSION[success_in_signup]</label></center>";
@@ -42,6 +43,7 @@ if( isset($_SESSION["from"]))
 					//for checking again later
 					unset($_SESSION["success_in_signup"]);
 				}
+			*/	
             	include("login_page.php");
 			?>             
 

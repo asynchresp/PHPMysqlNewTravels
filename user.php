@@ -36,7 +36,7 @@ $_SESSION["from"] = "user.php";
     	<?php include("user_menu.php"); ?>
     </div>
     <div id="container">
-		<?php echo  "<a href='logout.php'>Logout</a>"; ?>
+		<p>Welcome user.</p>
 	</div>
    
     

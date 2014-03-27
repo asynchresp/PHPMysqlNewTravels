@@ -11,7 +11,7 @@ if( !isset( $_POST['username']) || !isset( $_POST['password']))	//if this page i
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
 $password=""; // Mysql password 
-$db_name="new_travels"; // Database name 
+$db_name="royal_travels"; // Database name 
 $tbl_name="accounts"; // Table name 
 
 // Connect to server and select databse.

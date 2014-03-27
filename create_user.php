@@ -10,7 +10,7 @@ if( !isset( $_POST['full_name']) )	//if this page is not requested from login pa
 $host="localhost"; // Host name 
 $db_username="root"; // Mysql username 
 $db_password=""; // Mysql password 
-$db_name="new_travels"; // Database name 
+$db_name="royal_travels"; // Database name 
 $tbl_name="accounts"; // Table name 
 
 // Connect to server and select databse.

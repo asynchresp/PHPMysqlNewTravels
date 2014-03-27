@@ -74,6 +74,14 @@ body,td,th,a {
 				unset($_SESSION["wrong_UP"]);
 	
 			}
+			//whenever a new user account is created, below message will be displayed
+			if( isset($_SESSION["success_in_signup"]) )
+			{
+				echo  "<center><p style='margin-top:10px;position:relative;color:gray;'>$_SESSION[success_in_signup]</p></center>";
+				//for checking again later
+				unset($_SESSION["success_in_signup"]);
+	
+			}
 		?>
         
 </form>

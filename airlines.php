@@ -1,6 +1,5 @@
-
-	<body> 
-    <div id="layout">
+<body> 
+<div id="layout">
 <?php include("header.php"); ?>
 <div id="contents">
 <div id="menu">

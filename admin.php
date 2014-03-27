@@ -28,7 +28,7 @@ $_SESSION["from"] = "admin.php";
 
 ?>
 <div id="layout">
-<?php include("logout.php"); ?>
+
 	<?php include("header.php"); ?>
     
     <div id="contents">
@@ -36,7 +36,7 @@ $_SESSION["from"] = "admin.php";
         	<?php include("admin_menu.php"); ?>
         </div>
         <div id="container">
-        	<p>   kfjdkjfksdjfkksdjkf </p>
+			<p>Welcome admin.</p>
         </div>
      </div>
      <?php include("footer.php"); ?>
